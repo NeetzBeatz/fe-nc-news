@@ -1,9 +1,16 @@
 import "../src/css-files/App.css";
+import AllArticles from "./Components/AllArticles";
+import ArticlesContainer from "./Components/ArticlesContainer";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
 function App() {
    return (
       <>
-         <h1>ItsTheNEWS!</h1>
+         <Header />
+         <br></br>
+         <ArticlesContainer />
+         <Footer />
       </>
    );
 }
