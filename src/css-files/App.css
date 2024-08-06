@@ -3,40 +3,105 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: Dejavu Sans, Arial, Verdana, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: rgba(240, 128, 128, 0.527);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* HEADER */
+.header {
+  color: rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-bar {
+  color: purple;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 4px solid green;
 }
 
-.card {
-  padding: 2em;
+nav ul {
+  list-style-type: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+#nav-bar-select {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#nav-bar-select:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(6, 94, 6);
+  background-color: white;
+  border-radius: 10%;
+  padding: 8px;
+}
+
+
+/* ALL ARTICLES */
+.articles-list {
+  list-style-type: none;
+  font-size: 18px;
+  text-align: center;
+  border-width: 3px;
+  border-radius: 20px;
+  padding:1.5rem;
+  margin-bottom: 1px;
+}
+
+.articles-button {
+  cursor: pointer;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: rgba(0, 0, 0, 0.239);
+  width: 400px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.article-imgs {
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  border: solid rgba(255, 208, 0, 0.623);
+}
+
+#articles-page-h2 {
+  background-color: black;
+  font-size: 40px;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 20px;
+  color: gold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  text-align: center;
+}
+
+#article-identifiers {
+  color: purple;
+}
+
+#article-titles {
+  padding: 1rem;
+  list-style-type: none;
+  color: gold;
+  background-color: black;
+  border: solid 3px rgb(255, 140, 0);
+  border-radius: 20px; 
 }
