@@ -7,9 +7,19 @@ const api = axios.create({
 export const getArticles = () => {
     return api.get("/articles")
     .then(response => {
-        // console.log("hello from axios")
         return response.data.articles
     }).catch(error => {
-        console.error(error)
-    })
+        console.log("error getting articles", error)
+        throw error;
+    });
 }
+
+export const getArticleById = (articleId) => {
+    return api.get(`/articles/${articleId}`)
+    .then(response => {
+        return response.data.article
+    }).catch(error => {
+        console.log("error getting article", error)
+        throw error;
+    });
+};
