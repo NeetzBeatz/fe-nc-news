@@ -10,10 +10,10 @@ body {
   background-color: rgba(240, 128, 128, 0.527);
 }
 
-
 /* HEADER */
 .header {
   color: rgb(0, 0, 0);
+  font-size: 90px;
 }
 
 .nav-bar {
@@ -36,7 +36,7 @@ nav ul {
 #nav-bar-select {
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -53,7 +53,7 @@ nav ul {
 /* ALL ARTICLES */
 .articles-list {
   list-style-type: none;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
   border-width: 3px;
   border-radius: 20px;
@@ -62,13 +62,19 @@ nav ul {
 }
 
 .articles-button {
+  border: solid 3px rgb(255, 140, 0);
   cursor: pointer;
-  border-radius: 10px;
-  border-width: 3px;
-  border-color: rgba(0, 0, 0, 0.239);
-  width: 400px;
-  padding: 20px;
+  border-radius: 40px;
+  border-width: 5px;
+  background-color: rgba(248, 244, 236, 0.793);
+  width: 650px;
+  height: 1000px;
+  padding: 1.5rem;
   display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-family: Dejavu Sans, Arial, Verdana, sans-serif;
 }
 
 .article-imgs {
@@ -76,14 +82,15 @@ nav ul {
   width: 250px;
   border-radius: 10px;
   border: solid rgba(255, 208, 0, 0.623);
+  position: relative; height: 350px; width: 500px;
 }
 
 #articles-page-h2 {
   background-color: black;
-  font-size: 40px;
+  font-size: 60px;
   color: wheat;
   padding: 1rem;
-  border-radius: 20px;
+  border-radius: 40px;
   color: gold;
   text-shadow:
   -1px -1px 0 #000,
@@ -98,10 +105,52 @@ nav ul {
 }
 
 #article-titles {
-  padding: 1rem;
-  list-style-type: none;
-  color: gold;
-  background-color: black;
   border: solid 3px rgb(255, 140, 0);
-  border-radius: 20px; 
+  list-style-type: none;
+  background-color: black;
+  font-size: 40px;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 20px;
+  color: gold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  text-align: center;
+}
+
+.single-article-container {
+  border: solid 3px rgb(255, 140, 0);
+  background-color: rgba(248, 244, 236, 0.793);
+  border-radius: 40px;
+  border-width: 5px;
+  padding: 1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.single-article-h2 {
+  background-color: black;
+  font-size: 40px;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 20px;
+  color: gold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  text-align: center;
+}
+
+#loading {
+  background-color: gold;
+  color: black;
+  border: solid;
+  border-color: black;
+  border-radius: 40px;
+  font-size: 70px;
 }

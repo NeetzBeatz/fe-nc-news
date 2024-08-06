@@ -1,5 +1,6 @@
+import { Route, Routes } from "react-router-dom";
 import "../src/css-files/App.css";
-import AllArticles from "./Components/AllArticles";
+import ArticleById from "./Components/ArticleById";
 import ArticlesContainer from "./Components/ArticlesContainer";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
@@ -8,9 +9,13 @@ function App() {
    return (
       <>
          <Header />
-         <br></br>
-         <ArticlesContainer />
-         <Footer />
+         <main>
+            <Routes>
+               <Route path="/articles" element={<ArticlesContainer />} />
+               <Route path="/articles/:articleId" element={<ArticleById />} />
+            </Routes>
+         </main>
+         {<Footer />}
       </>
    );
 }
