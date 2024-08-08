@@ -33,3 +33,9 @@ export const getCommentsByArticleId = (articleId) => {
         throw error;
     });
 };
+
+export const updateVotesByArticleId = (articleId) => {
+    return api.patch(`/articles/${articleId}`, {inc_votes: 1}).then(() => {
+        console.log("data fetched")
+    })
+};
