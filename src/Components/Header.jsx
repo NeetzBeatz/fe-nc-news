@@ -2,28 +2,43 @@ import { Link } from "react-router-dom";
 
 function Header() {
    return (
-      <header>
-         <h1 className="header">ItsTheNews</h1>
-         <nav className="nav-bar">
+      <div>
+         <Link to="/articles" id="nav-bar-select">
+            <ul>
+               <li id="logo-container">
+                  <h1 className="header-logo-h1-1">
+                     ItsTheNEWS
+                     {/* <h1 className="header-logo-h1-2">EWS</h1> */}
+                  </h1>
+               </li>
+            </ul>
+         </Link>
+         <br />
+         <br />
+         <br />
+         <br />
+         <nav className="nav-bar-container">
+            <br />
             <ul>
                <li>
                   <Link to="/articles" id="nav-bar-select">
-                     Articles
+                     ARTICLES
                   </Link>
                </li>
                <li>
                   <Link to="/topics" id="nav-bar-select">
-                     Topics
+                     TOPICS
                   </Link>
                </li>
                <li>
                   <Link to="/my-profile" id="nav-bar-select">
-                     My Profile
+                     PROFILE
                   </Link>
                </li>
             </ul>
          </nav>
-      </header>
+         <br />
+      </div>
    );
 }
 

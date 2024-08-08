@@ -23,3 +23,13 @@ export const getArticleById = (articleId) => {
         throw error;
     });
 };
+
+export const getCommentsByArticleId = (articleId) => {
+    return api.get(`/articles/${articleId}/comments`)
+    .then(response => {
+        return response.data.comments
+    }).catch(error => {
+        console.log("error getting comments for this article", error)
+        throw error;
+    });
+};
