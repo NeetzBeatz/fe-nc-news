@@ -17,6 +17,11 @@ function Header() {
          <br />
          <br />
          <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
          <nav className="nav-bar-container">
             <br />
             <ul>
@@ -37,6 +42,10 @@ function Header() {
                </li>
             </ul>
          </nav>
+         <br />
+         <br />
+         <br />
+         <br />
          <br />
       </div>
    );

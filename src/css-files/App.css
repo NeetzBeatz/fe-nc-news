@@ -70,10 +70,10 @@ body {
   border-bottom-style: double;
   padding: 2%;
   text-align: center;
-  position:relative;
+  position:absolute;
   width: 70%;
   right: 0%;
-  left: 20%;
+  left: 15%;
 }
 
 .nav-bar-container:hover {
@@ -85,7 +85,6 @@ body {
   border-bottom-width: 10px;
   border-bottom-style: double;
   padding: 2%;
-  position:relative;
 }
 
 nav ul {
@@ -97,12 +96,13 @@ nav ul {
   margin-bottom: 0.1%;
   padding: 0;
   justify-content: center;
+  position: relative;
 }
 
 #nav-bar-select {
   color: #61D1AC;
   font-weight: bold;
-  font-size: 90%;
+  font-size: large;
 }
 
 #nav-bar-select:hover {
@@ -149,9 +149,8 @@ nav ul {
   border-bottom-right-radius: 50px;
   border-width: 5px;
   background-color: #EBE3CA;
-  width: 110%;
-  height: 1000px;
-  padding: 1rem;
+  height: 60%;
+  padding: 2%;
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -166,6 +165,7 @@ nav ul {
 }
 
 .articles-list {
+  width: 93%;
   list-style-type: none;
   font-size: 25px;
   text-align: center;
@@ -183,10 +183,6 @@ nav ul {
   position: relative; height: 350px; width: 500px;
 }
 
-/* #article-identifiers {
-  color: purple;
-} */
-
 #article-titles {
   border: solid 3px #EBE3CA;
   list-style-type: none;
@@ -199,15 +195,15 @@ nav ul {
 }
 
 .single-article-container {
-  border: solid 3px #9A2F72;
+  border: solid #9A2F72;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   background-color: #EBE3CA;
-  border-width: 5px;
+  border-width: 5%;
   padding: 5%;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 70%;
+  width: 50%;
   height: 70%;
   display: inline-table;
 }
@@ -255,7 +251,7 @@ nav ul {
   display: inline-flex;
   justify-content: center;
   padding: 1.2%;
-  gap: 3%;
+  gap: 4%;
   font-weight: bold;
   align-items: center;
   width: 70%;
@@ -322,7 +318,7 @@ nav ul {
   gap: 10%;
   font-weight: bold;
   align-items: center;
-  width: 30%;
+  width: 40%;
 }
 
 .give-like-button {

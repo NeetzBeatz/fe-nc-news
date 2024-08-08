@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import moment from "moment";
 import Loading from "./Loading";
 import CommentsCard from "./CommentsCard";
+import Votes from "./Votes";
 
 function ArticleById() {
    const { articleId } = useParams();
@@ -42,10 +43,7 @@ function ArticleById() {
                src={singleArticle.article_img_url}
             />
             <p>{singleArticle.body}</p>
-            <p className="likes-container">
-               {singleArticle.votes} likes{" "}
-               <button className="give-like-button">Like</button>
-            </p>
+            <Votes singleArticle={singleArticle} />
             <p>{singleArticle.comment_count} comments</p>
             <form className="add-comment-container">
                <button className="add-comment-button">
