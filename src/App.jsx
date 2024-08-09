@@ -5,6 +5,7 @@ import ArticlesContainer from "./Components/ArticlesContainer";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import CommentsCard from "./Components/CommentsCard";
+import CommentForm from "./Components/CommentForm";
 
 function App() {
    return (
@@ -17,6 +18,10 @@ function App() {
                <Route
                   path="/articles/:articleId/comments"
                   element={<CommentsCard />}
+               />
+               <Route
+                  path="/articles/:articleId/comments"
+                  element={<CommentForm />}
                />
             </Routes>
          </main>

@@ -5,6 +5,7 @@ import moment from "moment";
 import Loading from "./Loading";
 import CommentsCard from "./CommentsCard";
 import Votes from "./Votes";
+import CommentForm from "./CommentForm";
 
 function ArticleById() {
    const { articleId } = useParams();
@@ -28,38 +29,26 @@ function ArticleById() {
    }
 
    return (
-      <section className="single-article-container">
-         <h2 className="single-article-h2">{singleArticle.title}</h2>
-         <br />
-         <li className="articles-list" key={singleArticle.title}>
-            <p className="single-article-identifiers">
-               {singleArticle.topic} | Written by {singleArticle.author} |{" "}
-               {moment(singleArticle.created_at).format("DD/MM/YYYY")}
-            </p>
-            <br />
-            <br />
-            <img
-               className="single-article-imgs"
-               src={singleArticle.article_img_url}
-            />
-            <p>{singleArticle.body}</p>
-            <Votes singleArticle={singleArticle} />
-            <p>{singleArticle.comment_count} comments</p>
-            <form className="add-comment-container">
-               <button className="add-comment-button">
-                  <label htmlFor="add-comment-button">Add comment</label>
-                  <br />
-               </button>
-               <input
-                  type="text"
-                  id="add-comment-form"
-                  name="add-comment-form"
-                  className="add-comment-form"
-                  placeholder="add comment here"
-               ></input>
-            </form>
-            <CommentsCard />
-         </li>
+      <section>
+         <h2 id="article-titles">{singleArticle.title}</h2>
+         <ul className="single-article-container">
+            <li className="articles-list" key={singleArticle.title}>
+               <p className="single-article-identifiers">
+                  {singleArticle.topic} | Written by {singleArticle.author} |{" "}
+                  {moment(singleArticle.created_at).format("DD/MM/YYYY")}
+               </p>
+               <img
+                  className="single-article-imgs"
+                  src={singleArticle.article_img_url}
+               />
+               <p>{singleArticle.body}</p>
+               <Votes singleArticle={singleArticle} />
+               <p className="number-of-comments">
+                  {singleArticle.comment_count} comments
+               </p>
+               <CommentsCard />
+            </li>
+         </ul>
       </section>
    );
 }

@@ -2,6 +2,7 @@ import moment from "moment";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getCommentsByArticleId } from "../api";
+import CommentForm from "./CommentForm";
 
 function CommentsCard() {
    const { articleId } = useParams();
@@ -18,7 +19,8 @@ function CommentsCard() {
    }
 
    return (
-      <section className="comments-card">
+      <div>
+         <CommentForm setComments={setComments} articleId={articleId} />
          <ul>
             {comments.map((comment) => {
                return (
@@ -30,11 +32,12 @@ function CommentsCard() {
                         {moment(comment.created_at).format("DD/MM/YYYY")}
                      </p>
                      <p>{comment.body}</p>
+                     <button>Delete comment</button>
                   </li>
                );
             })}
          </ul>
-      </section>
+      </div>
    );
 }
 
